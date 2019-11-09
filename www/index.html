@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script>
+		function SendToHost() {
+  			window.location.href = "fmx-js:SendToHost()";
+		}
+
+		var counter = 0;
+
+		setInterval(myTimer, 1000);
+
+		function myTimer() {
+			counter++;
+			window.location.href = "fmx-js:SendToHostValue(" + counter + ")";
+		}
+
+	</script>
+</head>
+<body>
+	<h1>FMX-JS Bridge Demo</h1>
+	<h3 id='text1'></h3>
+	<button onclick="SendToHost()">Send string to FMX</button>
+</body>

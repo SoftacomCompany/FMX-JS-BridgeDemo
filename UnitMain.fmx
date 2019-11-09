@@ -1,0 +1,54 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'frmMain'
+  ClientHeight = 480
+  ClientWidth = 391
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object wbWebBrowser: TWebBrowser
+    Align = Client
+    Size.Width = 391.000000000000000000
+    Size.Height = 392.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Panel1: TPanel
+    Align = Bottom
+    Position.Y = 392.000000000000000000
+    Size.Width = 391.000000000000000000
+    Size.Height = 88.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'FMX Host App Panel'
+      TabOrder = 0
+    end
+    object lblSomeText: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 353.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+    object lblValueFromJavaScript: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 353.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+  object tDemoDeviceToken: TTimer
+    Interval = 2000
+    OnTimer = tDemoDeviceTokenTimer
+    Left = 56
+    Top = 240
+  end
+end
